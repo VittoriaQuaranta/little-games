@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Game</title>
+<style>
+    .progress-bar {
+        width: 50%;
+        background-color: #ffffff00;
+        border: 1px solid #ccc;
+        border-radius: 180px;
+        height: 30px;
+        margin-bottom: 10px;
+        white-space: nowrap;
+    }
+    
+    .correct {
+        width: 0%;
+        height: 100%;
+        border-top-left-radius: 180px;
+        border-bottom-left-radius: 180px;
+        border-top-right-radius: 180px;
+        border-bottom-right-radius: 180px;
+        background-color: #4CAF50;
+        display: inline-block; 
+    }
+    
+    .incorrect {
+        width: 0%;
+        height: 100%;
+        border-top-right-radius: 180px;
+        border-bottom-right-radius: 180px;
+        border-top-left-radius: 180px;
+        border-bottom-left-radius: 180px;
+        background-color: #f44336;
+        display: inline-block; 
+    }
+    
+    .percent-text {
+        text-align: center;
+        line-height: 30px;
+        color: black;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+   
+
+    <h1> Prime Game</h1>
+    <h2>Is the number prime? </h2>
+
+    <div class="progress-bar">
+        <div class="correct" id="correctBar"></div>
+        <div class="incorrect" id="incorrectBar"></div>
+        <div class="percent-text" id="percentText"></div>
+    </div>
+    <h3 style = "color: white"> ,</h3>
+    <button id = "generate_number_button" onclick = "displayNumber()" style="font-size:25px; background-color: aquamarine; border-radius: 10px"> Generate number! </button>
+    <button onclick = "resetProgress()" style="font-size:25px; background-color: aquamarine; border-radius: 10px"> Reset Progress</button>
+    <h3 id = "number_output"> Click "generate number" to get started. </h3>
+    <button onclick = "thinkPrime()" style="font-size:20px; background-color: mediumvioletred; border-radius: 60px"> Prime </button>
+    <button onclick = "thinkNot()"style="font-size:20px; background-color: mediumvioletred; border-radius: 60px"> Not Prime </button>
+    <h3 id = "result"> </h3>
+    
+    <a href = "start.html">
+        <button id = "home" style = "font-size:10px; background-color:cornflowerblue; border-radius: 200px"> Home!</button>
+      </a>
+
+    <script src="primeCode.js"></script>   
+</body>
+</html>

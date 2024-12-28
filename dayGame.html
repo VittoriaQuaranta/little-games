@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day Game</title>
+</head>
+
+<script src="dayCode.js" defer> </script>
+
+<body>
+  <h1>What Day of the Week?</h1>
+  <h2>Use this website to find out what day of the week any date is!</h2>
+  <p id="answer_text"> </p>
+  <p id="amIright"> </p>
+  <input id="month_input" type="text" placeholder="Month">
+  <input id="day_input" type="number" placeholder="Day">
+  <input id="year_input" type="number" placeholder="Year">
+  <p> </p>
+  <button onclick="randomize()" style="font-size:25px; background-color: aquamarine; border-radius: 10px"> Give me a date! </button> 
+  <p> </p>
+
+  <button id = "MondayButton" onclick = "checkMonday()" style="font-size:20px; background-color: mediumvioletred; border-radius: 60px"> Monday </button>
+  <button id = "TuesdayButton" onclick = "checkTuesday()" style="font-size:20px; background-color: mediumvioletred; border-radius: 60px"> Tuesday </button>
+  <button id = "WednesdayButton" onclick = "checkWednesday()" style="font-size:20px; background-color: mediumvioletred; border-radius: 60px"> Wednesday </button>
+  <button id = "ThursdayButton" onclick = "checkThursday()" style="font-size:20px; background-color: mediumvioletred; border-radius: 60px"> Thursday </button>
+  <button id = "FridayButton" onclick = "checkFriday()" style="font-size:20px; background-color: mediumvioletred; border-radius: 60px"> Friday </button>
+  <button id = "SaturdayButton" onclick = "checkSaturday()" style="font-size:20px; background-color: mediumvioletred; border-radius: 60px"> Saturday </button>
+  <button id = "SundayButton" onclick = "checkSunday()" style="font-size:20px; background-color: mediumvioletred; border-radius: 60px"> Sunday </button>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <a href = "start.html">
+    <button id = "home" style = "font-size:10px; background-color:cornflowerblue; border-radius: 200px"> Home!</button>
+  </a>
+</body>
+</html>
