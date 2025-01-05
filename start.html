@@ -5,18 +5,74 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Start Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: aliceblue;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+    .banner {
+      display: flex;
+      align-items: center; 
+      padding: 10px;
+      background-color: white;
+    }
+
+    .banner img {
+      width: 60px; 
+      height: auto; 
+      margin-right: 15px; 
+    }
+
+    .banner h1 {
+      margin: 15px;
+      font-size: 30px; 
+      color:deeppink;
+    }
+
+    .banner h2 {
+      margin: 15px;
+      font-size: 15px; 
+      color:darkviolet;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-left: 30px;
+      color:black;
+    }
+
+    a button {
+      font-size: 25px; 
+      background-color: aquamarine; 
+      border-radius: 10px; 
+      margin: 10px; /* Add spacing between buttons */
+    }
+  </style>
 </head>
 
 <body>
-    <h1>Games</h1>
-    <h2>Pick a game to play</h2>
-    <a href="dayGame.html">
-       <button  style="font-size:25px; background-color: aquamarine; border-radius: 10px"> Day of the week! </button>
+  <div class="banner">
+    <img src="GameLogo.png" alt="Numerical Games 40 Logo">
+    <h1>Numerical Games 40</h1>
+    <a href = "aboutUs.html">
+      <h2>About us</h2>
     </a>
-    <a href="piGame.html">
-        <button  style="font-size:25px; background-color: aquamarine; border-radius: 10px"> Pi digits! </button>
-     </a>
-   <a href="primeGame.html">
-      <button  style="font-size:25px; background-color: aquamarine; border-radius: 10px"> Prime Numbers! </button>
-   </a>
+    
+  </div>
+
+  <h3>Click on one of the many exciting games to play!</h3>
+
+  <a href="dayGame.html">
+    <button>Day of the week!</button>
+  </a>
+  <a href="piGame.html">
+    <button>Pi digits!</button>
+  </a>
+  <a href="primeGame.html">
+    <button>Prime Numbers!</button>
+  </a>
 </body>
+</html>

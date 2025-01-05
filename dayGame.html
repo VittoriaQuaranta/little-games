@@ -5,22 +5,85 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Day Game</title>
-</head>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: aliceblue;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+    .banner {
+      display: flex;
+      align-items: center; 
+      padding: 10px;
+      background-color: white;
+    }
+
+    .banner img {
+      width: 60px; 
+      height: auto; 
+      margin-right: 15px; 
+    }
+
+    .banner h1 {
+      margin: 15px;
+      font-size: 30px; 
+      color:deeppink;
+    }
+
+    .banner h2 {
+      margin: 15px;
+      font-size: 15px; 
+      color:darkviolet;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-left: 30px;
+      color:black;
+    }
+
+    a button {
+      font-size: 25px; 
+      background-color: aquamarine; 
+      border-radius: 10px; 
+      margin: 10px; 
+    }
+    .answerDisplay{
+      display: flex;
+      align-items: center; 
+      padding: 3px; 
+    }
+  </style>
+ <head>
 
 <script src="dayCode.js" defer> </script>
 
 <body>
-  <h1>What Day of the Week?</h1>
-  <h2>Use this website to find out what day of the week any date is!</h2>
-  <p id="answer_text"> </p>
-  <p id="amIright"> </p>
+  <div class="banner">
+    <a href = "start.html">
+      <img src="GameLogo.png" alt="Numerical Games 40 Logo">
+    </a>
+    <h1>What Day of the Week?</h1>
+    <h2>Use this website to find out what day of the week any date is!</h2>
+  </div>
+
+  <p> </p>
+  <p>Click to randomize a date, or input one yourself!</p>
+  <button onclick="randomize()" style="font-size:25px; background-color: aquamarine; border-radius: 10px"> Give me a date! </button> 
+  <p></p>
+  <div class="answerDisplay">
+    <p id="answer_text"> </p>
+    <p id="amIright"></p>
+  </div>
+
+
   <input id="month_input" type="text" placeholder="Month">
   <input id="day_input" type="number" placeholder="Day">
   <input id="year_input" type="number" placeholder="Year">
-  <p> </p>
-  <button onclick="randomize()" style="font-size:25px; background-color: aquamarine; border-radius: 10px"> Give me a date! </button> 
-  <p> </p>
-
+<p></p>
   <button id = "MondayButton" onclick = "checkMonday()" style="font-size:20px; background-color: mediumvioletred; border-radius: 60px"> Monday </button>
   <button id = "TuesdayButton" onclick = "checkTuesday()" style="font-size:20px; background-color: mediumvioletred; border-radius: 60px"> Tuesday </button>
   <button id = "WednesdayButton" onclick = "checkWednesday()" style="font-size:20px; background-color: mediumvioletred; border-radius: 60px"> Wednesday </button>
@@ -30,9 +93,5 @@
   <button id = "SundayButton" onclick = "checkSunday()" style="font-size:20px; background-color: mediumvioletred; border-radius: 60px"> Sunday </button>
   <p> </p>
   <p> </p>
-  <p> </p>
-  <a href = "start.html">
-    <button id = "home" style = "font-size:10px; background-color:cornflowerblue; border-radius: 200px"> Home!</button>
-  </a>
 </body>
 </html>
